@@ -1,10 +1,10 @@
 const checkVisa = {
     //4xxx xxxx xxxx xxxx össz 16 szám
     pattern: {
-        visa: /^[52]\d{15}$/,
+        visa: /^4\d{15}$/,
     },
     validate(text, type) {
-        text.match(this.pattern[type]) ? true : false;
+        return text.match(this.pattern[type]) ? true : false;
     }
 };
 
