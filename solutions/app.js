@@ -13,14 +13,16 @@ import checkMac from "./mac";
 
 const checker = {
     rules: { checkIP, checkMac, checkVisa },
-    validate(text, rule) {
-        if (rule === 'visa') {
+    validate(text, type) {
+        if (type === 'visa') {
             return this.rules.checkVisa(text)
-        } if else (rule === 'mac'){
-            return this.rules.checkMac('text')
-        } if else (rule === 'ip') { return this.rules.checkIP(text) }
+        }
+        if (type === 'mac') {
+            return this.rules.checkMac(text)
+        }
+        if (type === 'ip') { return this.rules.checkIP(text) }
     }
 };
 
 
-export default { checker }
+export default checker
