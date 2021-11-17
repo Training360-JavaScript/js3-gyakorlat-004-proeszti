@@ -1,4 +1,10 @@
 
+// Fájl: solutions/ip.js
+// Függvény neve: checkIP
+// Export: a checkIP függvény legyen a default export!
+// Írj reguláris kifejezést IP-cím validálására! Teszteld is a megoldásod!
+// A checkIP függvényben valósítsd meg a validálást, a paraméterként kapott IP-címet validálja le a függvény, és true|false legyen a visszatérési értéke attól függően, hogy valid|invalid a szám.
+
 
 const checkIP = (num) => {
 
@@ -10,4 +16,3 @@ const checkIP = (num) => {
 
 
 export default checkIP;
-// /^\d{3}.\d{2}.\d{3}.\d{1} $/
